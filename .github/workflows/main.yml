@@ -15,6 +15,6 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Build image
-      run: sudo docker build -t container .
+      run: docker build -t container .
     - name: run container
-      run: sudo docker run -d -p 3000:3000  container
+      run: docker run -d -p 3000:3000  container
