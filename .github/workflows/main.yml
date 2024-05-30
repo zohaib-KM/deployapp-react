@@ -1,5 +1,5 @@
 
-name: Deploy RDocker container on self hosted server
+name: Deploy Docker container on self hosted server
 
 on:
   push:
@@ -15,6 +15,6 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Build image
-      run: docker image  build -t container .
+      run: sudo docker build -t container .
     - name: run container
-      run: docker run -d -p 3000:3000  container
+      run: sudo docker run -d -p 3000:3000  container
