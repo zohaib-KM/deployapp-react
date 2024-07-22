@@ -12,7 +12,7 @@ jobs:
     environment: Production
     env:
       CONTAINER_NAME: reactapp-test
-      IMAGE_NAME_TAG: REACTAPP-TEST:latest
+      IMAGE_NAME_TAG: reactapp-test-image:latest
       HOST_PORT: 3000
       CONTAINER_PORT: 3000
 
